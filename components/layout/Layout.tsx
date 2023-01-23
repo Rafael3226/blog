@@ -1,10 +1,10 @@
+import { ReactElement } from "react";
+import Navbar from "../navbar";
+import Footer from "../footer";
+import Head from "next/head";
+import Container from "../container";
 
-import { ReactElement } from 'react'
-import Navbar from '../NavBar'
-import Footer from '../footer'
-import Head from 'next/head'
-
-function Layout({ children }:{children: ReactElement}) {
+function Layout({ children }: { children: ReactElement }) {
   return (
     <>
       <Head>
@@ -13,10 +13,12 @@ function Layout({ children }:{children: ReactElement}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main>
+        <Container>{children}</Container>
+      </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
