@@ -2,7 +2,6 @@ import { ReactElement } from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
 import Head from "next/head";
-import Container from "../container";
 
 function Layout({ children }: { children: ReactElement }) {
   return (
@@ -13,9 +12,7 @@ function Layout({ children }: { children: ReactElement }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>
-        <Container>{children}</Container>
-      </main>
+      {children}
       <Footer />
     </>
   );
