@@ -33,7 +33,7 @@ export default function Icon({
         <path
           d="M71.3622 80.1924C75.221 86.8074 84.779 86.8074 88.6378 80.1924L106.227 50.0387C110.116 43.3722 105.308 35 97.5896 35H62.4104C54.6925 35 49.8838 43.3721 53.7726 50.0387L71.3622 80.1924Z"
           stroke="black"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <PathStyled
@@ -48,9 +48,9 @@ export default function Icon({
           width="112.707"
           height="98.5635"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -83,9 +83,9 @@ export default function Icon({
           width="73.2244"
           height="68.1536"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

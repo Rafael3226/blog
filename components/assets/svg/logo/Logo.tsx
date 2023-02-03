@@ -38,7 +38,7 @@ export default function Logo({
         <path
           d="M81.3622 79.1924C85.221 85.8074 94.779 85.8074 98.6378 79.1924L116.227 49.0387C120.116 42.3722 115.308 34 107.59 34H72.4104C64.6925 34 59.8838 42.3721 63.7726 49.0387L81.3622 79.1924Z"
           stroke="black"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <PathStyled
@@ -53,9 +53,9 @@ export default function Logo({
           width="112.707"
           height="98.5635"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -88,9 +88,9 @@ export default function Logo({
           width="73.2244"
           height="68.1536"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
