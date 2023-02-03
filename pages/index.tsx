@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Icon from "../components/assets/svg/icon/Icon";
 
 const CenterDiv = styled.div`
   display: grid;
@@ -8,7 +9,8 @@ const CenterDiv = styled.div`
 export default function Home() {
   return (
     <CenterDiv>
-      <h1 style={{ backgroundColor: "blue"}}>Home</h1>
+      <h1>HOME</h1>
+      <Icon width="500px" height="500px"/>
     </CenterDiv>
   );
 }
