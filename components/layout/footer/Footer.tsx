@@ -13,7 +13,7 @@ const FooterDiv = styled.div`
 `;
 
 function Footer() {
-  return <FooterDiv>Footer</FooterDiv>;
+  return <FooterDiv>Copyright &copy; Rafael Uribe 2023</FooterDiv>;
 }
 
 export default Footer;
