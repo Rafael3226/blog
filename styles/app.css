@@ -1,11 +1,11 @@
 html {
   /* BackGround*/
-  background-image: url("../public/bg.jpg");
+  background-image: white, url("../public/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   /* Fonts */
   font-family: sans-serif;
-  color: white;
+  color: #000;
 }

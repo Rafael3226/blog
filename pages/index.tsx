@@ -1,12 +1,8 @@
-import Center from "components/styled/center/Center";
-
 export default function Home() {
   return (
     <>
-      <Center>
-        <h1>Rafael Uribe</h1>
-        <h2>Software Engineer</h2>
-      </Center>
+      <h1>Rafael Uribe</h1>
+      <h2>Software Engineer</h2>
       <main>
         <h2>Contact Information</h2>
         <p>
