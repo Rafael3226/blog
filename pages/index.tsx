@@ -1,4 +1,4 @@
-import Center from "components/styled/Center";
+import Center from "components/styled/center/Center";
 
 export default function Home() {
   return (

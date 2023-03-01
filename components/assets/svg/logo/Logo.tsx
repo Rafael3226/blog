@@ -1,4 +1,4 @@
-import PathStyled from "../PathStyled";
+import PathAnimation from "../PathAnimation";
 
 export default function Logo({
   width,
@@ -25,13 +25,13 @@ export default function Logo({
         fill="white"
       />
       <g filter="url(#filter0_d_0_1)">
-        <PathStyled
+        <PathAnimation
           d="M81.4251 105.708C85.3091 112.182 94.6909 112.182 98.5749 105.708L140.913 35.1449C144.912 28.4797 140.111 20 132.338 20H90H47.6619C39.889 20 35.0878 28.4797 39.087 35.145L81.4251 105.708Z"
           fill="white"
         />
       </g>
       <g filter="url(#filter1_d_0_1)">
-        <PathStyled
+        <PathAnimation
           d="M81.3622 79.1924C85.221 85.8074 94.779 85.8074 98.6378 79.1924L116.227 49.0387C120.116 42.3722 115.308 34 107.59 34H72.4104C64.6925 34 59.8838 42.3721 63.7726 49.0387L81.3622 79.1924Z"
           fill="white"
         />
@@ -41,7 +41,7 @@ export default function Logo({
           strokeWidth="10"
         />
       </g>
-      <PathStyled
+      <PathAnimation
         d="M100 130C100 135.523 95.5228 140 90 140C84.4772 140 80 135.523 80 130C80 124.477 84.4772 120 90 120C95.5228 120 100 124.477 100 130Z"
         fill="white"
       />

@@ -19,9 +19,9 @@ const changeColors = keyframes`
 
 const ANIMATION_TIME = 15;
 
-const PathStyled = styled.path`
+const PathAnimation = styled.path`
   animation: ${changeColors} ${ANIMATION_TIME}s infinite;
   animation-timing-function: linear;
 `;
 
-export default PathStyled;
+export default PathAnimation;

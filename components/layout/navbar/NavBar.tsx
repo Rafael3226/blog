@@ -1,26 +1,7 @@
-import styled from "styled-components";
-import Link from "next/link";
-import Logo from "../../assets/svg/logo/Logo";
+import Logo from "components/assets/svg/logo/Logo";
+import Link from "./Link";
+import Nav from "./Nav";
 import { ReactElement } from "react";
-
-const StyledNav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: #000;
-`;
-
-const StyledLink = styled(Link)`
-  width: 25%;
-  color: white;
-
-  text-decoration: none;
-
-  &:hover {
-    font-size: 1.1rem;
-  }
-`;
 
 interface Route {
   href: string;
@@ -37,15 +18,15 @@ const routesList: Route[] = [
 
 export default function NavBar() {
   return (
-    <StyledNav>
+    <Nav>
       {routesList.map(
         ({ show, href, children }: Route, i: number) =>
           show && (
-            <StyledLink key={i} href={href}>
+            <Link key={i} href={href}>
               {children}
-            </StyledLink>
+            </Link>
           )
       )}
-    </StyledNav>
+    </Nav>
   );
 }
