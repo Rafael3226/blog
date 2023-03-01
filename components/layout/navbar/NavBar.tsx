@@ -5,12 +5,10 @@ import { ReactElement } from "react";
 
 const StyledNav = styled.nav`
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
   align-items: center;
 
   background-color: #000;
-  border-radius: 10px;
 `;
 
 const StyledLink = styled(Link)`

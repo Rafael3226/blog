@@ -7,7 +7,7 @@ function Layout({ children }: { children: ReactElement }) {
   return (
     <>
       <Head>
-        <title>Rafael Uribe</title>
+        <title>Rafael Uribe - Software Engineer</title>
         <meta name="description" content="Technology Blog." />
         <link rel="icon" href="/images/favicon.ico" />
         <link
