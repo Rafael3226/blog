@@ -1,17 +1,15 @@
-import Title from "components/styled/title";
+import P from "components/styled/p";
 
-function Skills() {
+export default function Skills() {
   return (
     <section>
-      <Title>Skills</Title>
-      <p>
+      <h2>Skills</h2>
+      <P>
         My technical skills include Git, Bitbucket, Next.js, Microsoft Azure,
         SQL Azure, Microsoft SQL Server, Express.js, TypeScript, C#, and CSS. I
         am always looking to expand my skill set and stay up-to-date with the
         latest technologies and best practices in software engineering.
-      </p>
+      </P>
     </section>
   );
 }
-
-export default Skills;
