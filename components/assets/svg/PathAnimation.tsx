@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import ColorKeyframes, {
+import {
   ANIMATION_TIME,
+  SvgColorKeyFrames,
 } from "components/styled/color-key-frames";
 
 const PathAnimation = styled.path`
-  animation: ${ColorKeyframes} ${ANIMATION_TIME}s infinite;
+  animation: ${SvgColorKeyFrames} ${ANIMATION_TIME}s infinite;
   animation-timing-function: linear;
 `;
 

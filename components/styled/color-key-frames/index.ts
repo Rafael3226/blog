@@ -1,5 +1,7 @@
-import ColorKeyFrames, { ANIMATION_TIME } from "./colorKeyFrames";
+import {
+  ANIMATION_TIME,
+  SvgColorKeyFrames,
+  TextColorKeyFrames,
+} from "./colorKeyFrames";
 
-export default ColorKeyFrames;
-
-export { ANIMATION_TIME };
+export { ANIMATION_TIME, SvgColorKeyFrames, TextColorKeyFrames };

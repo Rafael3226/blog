@@ -11,7 +11,7 @@ export default function Logo({
     <svg
       width={width}
       height={height}
-      style={{position: 'relative', top: '4px' }}
+      style={{ position: "relative", top: "4px" }}
       viewBox="0 0 347 170"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

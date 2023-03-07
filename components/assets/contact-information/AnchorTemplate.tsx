@@ -3,12 +3,19 @@ import ContactItemProps from "./ContactItemProps";
 
 function AnchorTemplate({ href, icon, text }: ContactItemProps) {
   return (
-    <div>
-      <A href={href}>
+    <A href={href} target="_blank">
+      <div
+        style={{
+          width: "30%",
+          display: "flex",
+          justifyContent: "end",
+          paddingRight: "2px",
+        }}
+      >
         {icon}
-        <span>{text}</span>
-      </A>
-    </div>
+      </div>
+      <div style={{ width: "70%" }}>{text}</div>
+    </A>
   );
 }
 

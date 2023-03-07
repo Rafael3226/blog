@@ -1,13 +1,14 @@
 import GitHub from "../svg/github";
 import LinkedIn from "../svg/linkedin";
 import Mail from "../svg/mail";
+import Phone from "../svg/phone";
 import AnchorTemplate from "./AnchorTemplate";
 import ContactItemProps from "./ContactItemProps";
 
 const linkList: ContactItemProps[] = [
   {
     href: "tel:+1 6472957559",
-    icon: <Mail />,
+    icon: <Phone />,
     text: "+1 647 295 7559",
   },
   {
@@ -21,15 +22,21 @@ const linkList: ContactItemProps[] = [
     text: "LinkedIn",
   },
   {
-    href: "tel:+1 6472957559",
+    href: "https://github.com/Rafael3226",
     icon: <GitHub />,
-    text: " GitHub",
+    text: "GitHub",
   },
 ];
 
 function ContactInformation() {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       {linkList.map(({ href, icon, text }: ContactItemProps) => (
         <AnchorTemplate href={href} icon={icon} text={text} />
       ))}

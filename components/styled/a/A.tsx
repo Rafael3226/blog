@@ -5,9 +5,11 @@ const A = styled.a`
   color: black;
   border-radius: 20px;
   padding: 10px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   text-decoration: none;
+  width: 40%;
 `;
 
 export default A;
