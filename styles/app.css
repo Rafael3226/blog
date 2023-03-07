@@ -1,6 +1,4 @@
 html {
-  /* BackGround*/
-  background-color: #000;
   /* 
   background-image: #000, url("../public/bg.jpg");
   background-size: cover;
@@ -11,4 +9,45 @@ html {
   /* Fonts */
   font-family: sans-serif;
   color: #fff;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #061e3e,
+    #251e3e,
+    #451e3e,
+    #651e3e,
+    #851e3e
+  );
+  background-size: 500% 500%;
+  animation: gradient 180s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #451e3e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 10px;
 }

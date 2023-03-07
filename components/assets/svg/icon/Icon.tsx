@@ -1,5 +1,3 @@
-import PathAnimation from "../PathAnimation";
-
 export default function Icon({
   width,
   height,
@@ -20,13 +18,13 @@ export default function Icon({
         fill="black"
       />
       <g filter="url(#filter0_d_8_12)">
-        <PathAnimation
+        <path
           d="M71.4251 106.708C75.3091 113.182 84.6909 113.182 88.5749 106.708L130.913 36.1449C134.912 29.4797 130.111 21 122.338 21H80H37.6619C29.889 21 25.0878 29.4797 29.087 36.145L71.4251 106.708Z"
           fill="white"
         />
       </g>
       <g filter="url(#filter1_d_8_12)">
-        <PathAnimation
+        <path
           d="M71.3622 80.1924C75.221 86.8074 84.779 86.8074 88.6378 80.1924L106.227 50.0387C110.116 43.3722 105.308 35 97.5896 35H62.4104C54.6925 35 49.8838 43.3721 53.7726 50.0387L71.3622 80.1924Z"
           fill="white"
         />
@@ -36,7 +34,7 @@ export default function Icon({
           strokeWidth="10"
         />
       </g>
-      <PathAnimation
+      <path
         d="M90 131C90 136.523 85.5228 141 80 141C74.4772 141 70 136.523 70 131C70 125.477 74.4772 121 80 121C85.5228 121 90 125.477 90 131Z"
         fill="white"
       />

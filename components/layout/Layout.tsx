@@ -7,24 +7,24 @@ import Container from "components/styled/container";
 function Layout({ children }: { children: ReactElement }) {
   return (
     <>
-      <PageHead />
-      <Navbar />
-      <div
+      <Container
         style={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "90vh",
+          flexGrow: 1,
         }}
       >
-        <Container
+        <div
           style={{
-            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "95vh",
           }}
         >
+          <PageHead />
+          <Navbar />
           {children}
-        </Container>
+        </div>
         <Footer />
-      </div>
+      </Container>
     </>
   );
 }

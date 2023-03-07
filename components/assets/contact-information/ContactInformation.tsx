@@ -37,8 +37,8 @@ function ContactInformation() {
         alignItems: "center",
       }}
     >
-      {linkList.map(({ href, icon, text }: ContactItemProps) => (
-        <AnchorTemplate href={href} icon={icon} text={text} />
+      {linkList.map(({ href, icon, text }: ContactItemProps, index: number) => (
+        <AnchorTemplate key={index} href={href} icon={icon} text={text} />
       ))}
     </div>
   );

@@ -6,13 +6,10 @@ import { TextColorKeyFrames } from "components/styled/color-key-frames";
 const StyledLink = styled(Link)`
   width: 25%;
   color: white;
-  display: flex;
-  justify-content: center;
   text-decoration: none;
 
   &:hover {
-    animation: ${TextColorKeyFrames} 3s infinite;
-    animation-timing-function: linear;
+    font-weight: bold;
   }
 `;
 
