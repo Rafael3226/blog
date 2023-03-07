@@ -1,3 +1,5 @@
+import ContactInformation from "components/assets/contact-information";
+
 export default function Home() {
   return (
     <>
@@ -10,22 +12,7 @@ export default function Home() {
           Ontario, Canada. If you'd like to get in touch with me, you can email
           me at:
         </p>
-        <div>
-          <div>
-            <a href="tel:+1 6472957559">+1 6472957559</a>
-          </div>
-          <div>
-            <a href="mailto:rafael.uribe.2080@gmail.com">
-              rafael.uribe.2080@gmail.com
-            </a>
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/in/rafaeluribe2080/">LinkedIn</a>
-          </div>
-          <div>
-            <a href="https://github.com/Rafael3226">GitHub</a>
-          </div>
-        </div>
+        <ContactInformation />
       </main>
     </>
   );
