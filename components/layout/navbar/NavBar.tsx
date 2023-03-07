@@ -11,9 +11,9 @@ interface Route {
 
 const routesList: Route[] = [
   { href: "/", children: <Logo width={"100px"} height={"50px"} />, show: true },
-  { href: "/blog", children: "Blog", show: true },
+  { href: "/blog", children: "Blog", show: false },
   { href: "/resume", children: "Resume", show: true },
-  { href: "/portfolio", children: "Portfolio", show: true },
+  { href: "/portfolio", children: "Portfolio", show: false },
 ];
 
 export default function NavBar() {
