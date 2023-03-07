@@ -9,7 +9,23 @@ const A = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  width: 40%;
+  width: 80%;
+
+  @media (min-width: 544px) {
+    width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+
+  @media (min-width: 992px) {
+    width: 35%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 30%;
+  }
 `;
 
 export default A;

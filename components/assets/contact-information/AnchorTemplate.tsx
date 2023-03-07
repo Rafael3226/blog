@@ -6,15 +6,12 @@ function AnchorTemplate({ href, icon, text }: ContactItemProps) {
     <A href={href} target="_blank">
       <div
         style={{
-          width: "30%",
-          display: "flex",
-          justifyContent: "end",
-          paddingRight: "2px",
+          padding: "0px 5px",
         }}
       >
         {icon}
       </div>
-      <div style={{ width: "70%" }}>{text}</div>
+      <div>{text}</div>
     </A>
   );
 }
