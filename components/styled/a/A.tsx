@@ -1,30 +1,22 @@
 import styled from "styled-components";
 
 const A = styled.a`
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  padding: 10px;
+  background-image: linear-gradient(150deg, #451e3e, #651e3e, #851e3e);
+  color: #fff;
+  border-radius: 25px;
+  padding: 4px;
   margin-bottom: 5px;
-  display: flex;
-  align-items: center;
   text-decoration: none;
+  transition: 0.3s;
+
   width: 80%;
+  min-width: 280px;
+  max-width: 390px;
 
-  @media (min-width: 544px) {
-    width: 50%;
-  }
+  cursor: pointer;
 
-  @media (min-width: 768px) {
-    width: 40%;
-  }
-
-  @media (min-width: 992px) {
-    width: 35%;
-  }
-
-  @media (min-width: 1200px) {
-    width: 30%;
+  &:hover {
+    scale: 1.1;
   }
 `;
 

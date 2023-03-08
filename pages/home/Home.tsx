@@ -1,44 +1,45 @@
 import ContactInformation from "components/assets/contact-information";
+import styled from "styled-components";
 
-const mainStyle = {
-  paddingTop: "30vh",
-  paddingLeft: "10px",
-};
-const sectionStyle = {
-  height: "85vh",
-  backgroundColor: "RGB(0,0,0,0.5)",
-  marginBottom: "10px",
-};
-const h1Style = {
-  fontSize: "4rem",
-};
-const h2Style = {
-  fontSize: "2rem",
-};
-const divStyle = {
-  padding: "10px",
-};
+const TwoColumns = styled.section`
+  min-height: 640px;
+  margin-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+const Column = styled.div`
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    margin-top: 25vh;
+  }
+`;
+
+const Name = styled.h1`
+  font-size: 5rem;
+  margin: 0px;
+`;
+const Degree = styled.h2`
+  font-size: 2rem;
+`;
 
 export default function Home() {
   return (
-    <>
-      <section style={sectionStyle}>
-        <main style={mainStyle}>
-          <h1 style={h1Style}>Rafael Uribe</h1>
-          <h2 style={h2Style}>Software Engineer</h2>
+    <TwoColumns>
+      <Column>
+        <main>
+          <Name>Rafael Uribe</Name>
+          <Degree>Software Engineer</Degree>
         </main>
-      </section>
-      <section style={sectionStyle}>
-        <div style={divStyle}>
-          <h2 style={h2Style}>Contact Information</h2>
-          <p>
-            My name is Rafael Uribe and I am a software engineer based in
-            Toronto, Ontario, Canada. If you'd like to get in touch with me, you
-            can email me at:
-          </p>
-          <ContactInformation />
-        </div>
-      </section>
-    </>
+      </Column>
+      <Column>
+        <ContactInformation />
+      </Column>
+    </TwoColumns>
   );
 }

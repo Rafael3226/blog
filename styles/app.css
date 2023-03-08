@@ -14,14 +14,15 @@ html {
 body {
   background: linear-gradient(
     -45deg,
-    #061e3e,
+    #051e3e,
     #251e3e,
     #451e3e,
     #651e3e,
-    #851e3e
+    #851e3e,
+    #a51e3e
   );
   background-size: 500% 500%;
-  animation: gradient 180s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
