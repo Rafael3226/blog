@@ -1,6 +1,8 @@
 import { useState } from "react";
+
+import { ArrowButton } from "./ArrowButton";
 import calculateStyleIndex from "./calculateStyleIndex";
-import { ArrowButton, Card, CardImage, Cards } from "./Cards";
+import { Card, CardImage, Cards } from "./Cards";
 
 const items = [
   "https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80",
@@ -36,7 +38,7 @@ function Carousel() {
         {items.map((src, i) => {
           const itemId = `item-${calculateStyleIndex(index, i)}`;
           return (
-            src && (
+            itemId !== "item-0" && (
               <Card
                 key={i}
                 htmlFor={itemId}

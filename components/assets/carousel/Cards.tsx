@@ -6,9 +6,6 @@ export const Cards = styled.div`
   min-height: 630px;
   margin-bottom: 20px;
 
-  #item-0 {
-    display: none;
-  }
   #item-1 {
     transform: translatex(-300px) scale(0.7);
     opacity: 0.4;
