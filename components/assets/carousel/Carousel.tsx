@@ -50,6 +50,7 @@ const CardImage = styled.img`
 `;
 
 const ArrowButton = styled.button`
+  z-index: 3;
   color: #fff;
   width: 50px;
   height: 50px;
