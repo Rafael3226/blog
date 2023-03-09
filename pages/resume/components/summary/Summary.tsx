@@ -1,6 +1,6 @@
 import Bold from "components/styled/bold";
 import P from "components/styled/p";
-import { Column, TwoColumns } from "pages/home/TwoColumns";
+import { Column, TwoColumns } from "components/styled/two-columns";
 
 export default function Summary() {
   return (
