@@ -1,11 +1,16 @@
 import { useState } from "react";
 import styled from "styled-components";
+import calculateStyleIndex from "./calculateStyleIndex";
+
 const Cards = styled.div`
   display: flex;
   justify-content: center;
   min-height: 630px;
   margin-bottom: 20px;
 
+  #item-0 {
+    display: none;
+  }
   #item-1 {
     transform: translatex(-300px) scale(0.7);
     opacity: 0.4;
@@ -75,8 +80,6 @@ const ArrowButton = styled.button`
 `;
 
 const items = [
-  "",
-  "",
   "https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80",
   "https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
   "https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
@@ -102,15 +105,22 @@ function Carousel() {
         onClick={() => {
           setIndex(index + 1);
         }}
-        disabled={index >= items.length - 3}
+        disabled={index >= items.length - 1}
       >{`>`}</ArrowButton>
 
       <Cards>
-        {items.slice(index, index + 5).map((src, i) => {
-          const itemId = `item-${i + 1}`;
+        {items.map((src, i) => {
+          const itemId = `item-${calculateStyleIndex(index, i)}`;
           return (
             src && (
-              <Card key={i} htmlFor={itemId} id={itemId}>
+              <Card
+                key={i}
+                htmlFor={itemId}
+                id={itemId}
+                onClick={() => {
+                  setIndex(i);
+                }}
+              >
                 <CardImage src={src} alt={itemId} />
               </Card>
             )
