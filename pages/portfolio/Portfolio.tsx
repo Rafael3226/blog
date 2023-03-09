@@ -1,5 +1,7 @@
+import Carousel from "components/assets/carousel/Carousel";
+
 function Portfolio() {
-  return <h1>Portfolio</h1>;
+  return <Carousel />;
 }
 
 export default Portfolio;

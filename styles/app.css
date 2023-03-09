@@ -10,6 +10,7 @@ html {
   font-family: sans-serif;
   color: #fff;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {

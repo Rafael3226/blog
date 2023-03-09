@@ -1,6 +1,6 @@
 import ContactInformation from "components/assets/contact-information";
 import styled from "styled-components";
-import { Column, TwoColumns } from "./TwoColumns";
+import { Column, TwoColumns } from "../../components/styled/two-columns";
 
 const Name = styled.h1`
   font-size: 5rem;
