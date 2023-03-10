@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Cards = styled.div`
   display: flex;
   justify-content: center;
-  min-height: 630px;
-  margin-bottom: 20px;
+  min-height: 620px;
+  padding: 20px;
 
   #item-1 {
     transform: translatex(-300px) scale(0.7);

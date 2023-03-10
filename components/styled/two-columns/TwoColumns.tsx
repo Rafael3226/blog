@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TwoColumns = styled.section`
-  min-height: 640px;
+  min-height: 650px;
   margin-bottom: 10px;
 
   display: grid;
