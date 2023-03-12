@@ -20,6 +20,15 @@ export const ArrowButton = styled.button`
     left: 10px;
   }
 
+  &.white {
+    position: none;
+    font-size: 3rem;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
   &:disabled {
     display: none;
   }

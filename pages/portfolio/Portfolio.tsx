@@ -6,8 +6,8 @@ const projects: ProjectTemplateProps[] = [
     title: "3D Rendering",
     description: "",
     img: "/blog.png",
-    github: "",
-    url: "",
+    github: "https://github.com/Rafael3226/Museo-Anatomia",
+    url: "https://638e79130bb609247f32cd73--loquacious-axolotl-441ac4.netlify.app/",
   },
   {
     title: "Social Network",
@@ -28,7 +28,7 @@ const projects: ProjectTemplateProps[] = [
     description: "",
     img: "/blog.png",
     github: "https://github.com/Rafael3226/typing-challenge",
-    url: "",
+    url: "https://typing-challeng.netlify.app/",
   },
   {
     title: "Green House Automation",

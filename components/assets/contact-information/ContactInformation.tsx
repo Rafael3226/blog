@@ -1,7 +1,7 @@
-import GitHub from "../svg/github";
-import LinkedIn from "../svg/linkedin";
-import Mail from "../svg/mail";
-import Phone from "../svg/phone";
+import GitHub from "../svg/GitHub";
+import LinkedIn from "../svg/LinkedIn";
+import MailIcon from "../svg/Mail";
+import Phone from "../svg/Phone";
 import AnchorTemplate from "./AnchorTemplate";
 import ContactItemProps from "./ContactItemProps";
 
@@ -13,7 +13,7 @@ const linkList: ContactItemProps[] = [
   },
   {
     href: "mailto:rafael.uribe.2080@gmail.com",
-    icon: <Mail />,
+    icon: <MailIcon />,
     text: "Rafael.Uribe.2080@gmail.com",
   },
   {

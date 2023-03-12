@@ -1,8 +1,8 @@
-import Logo from "components/assets/svg/logo/Logo";
 import Link from "./Link";
 import Nav from "./Nav";
 import { ReactElement } from "react";
 import styled from "styled-components";
+import Logo from "components/assets/svg/Logo";
 
 interface Route {
   href: string;

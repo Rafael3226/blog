@@ -1,3 +1,14 @@
+import {
+  CSS,
+  Express,
+  GitHub,
+  HTMLIcon,
+  JSIcon,
+  ReactIcon,
+  Redux,
+  ThreeJS,
+  TSIcon,
+} from "components/assets/svg";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -22,12 +33,18 @@ const Card = styled.div`
   }
 `;
 const ProjectImage = styled(Image)`
-  padding: 10px;
-  height: 400px;
-  width: 600px;
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
   border-radius: 10px;
-
-  background-color: #fff;
+`;
+const ProjectLink = styled.a`
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border-color: #fff;
+  border-width: 5px;
+  color: #fff;
 `;
 
 export interface ProjectTemplateProps {
@@ -49,23 +66,25 @@ function ProjectTemplate({
     <Card>
       <h1>{title}</h1>
 
-      <ProjectImage
-        src={img}
-        alt={title}
-        width="64"
-        height="64"
-        sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-      />
-      <p>{description}</p>
+      <p style={{ flexGrow: 1 }}>{description}</p>
       <div>
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          Project
-        </a>
+        <ProjectLink href={github} target="_blank" rel="noopener noreferrer">
+          Code
+        </ProjectLink>
+        <ProjectLink href={url} target="_blank" rel="noopener noreferrer">
+          {"Try here"}
+        </ProjectLink>
+      </div>
+
+      <div style={{ margin: "30px" }}>
+        <ThreeJS />
+        <Express />
+        <ReactIcon />
+        <Redux />
+        <HTMLIcon />
+        <CSS />
+        <JSIcon />
+        <TSIcon />
       </div>
     </Card>
   );
