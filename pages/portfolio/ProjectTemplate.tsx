@@ -1,3 +1,4 @@
+import DarkBackground from "components/assets/contact-information/DarkBackground";
 import {
   CSS,
   Express,
@@ -9,42 +10,25 @@ import {
   ThreeJS,
   TSIcon,
 } from "components/assets/svg";
-import Image from "next/image";
 import styled from "styled-components";
+import Project from "./Project";
 
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: rgba(0, 0, 0);
-  width: 350px;
-  height: 600px;
-  border-radius: 20px;
-
-  @media (min-width: 768px) {
-    width: 600px;
-  }
-  @media (min-width: 992px) {
-    width: 800px;
-  }
-  @media (min-width: 1200px) {
-    width: 1000px;
-  }
-`;
-const ProjectImage = styled(Image)`
-  margin-top: 20px;
-  height: auto;
-  width: 100%;
-  border-radius: 10px;
-`;
 const ProjectLink = styled.a`
-  height: 100px;
-  width: 100px;
-  background-color: gray;
-  border-color: #fff;
-  border-width: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 16px 32px;
   color: #fff;
+  background: #000;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: #fff;
+  border: 2px solid;
+
+  &:hover {
+    background-color: #451e3e;
+  }
 `;
 
 export interface ProjectTemplateProps {
@@ -63,17 +47,14 @@ function ProjectTemplate({
   url,
 }: ProjectTemplateProps) {
   return (
-    <Card>
+    <Project>
       <h1>{title}</h1>
-
-      <p style={{ flexGrow: 1 }}>{description}</p>
+      <div style={{ flexGrow: 1 }}>
+        <img style={{ height: "300px" }} src={img} />
+      </div>
       <div>
-        <ProjectLink href={github} target="_blank" rel="noopener noreferrer">
-          Code
-        </ProjectLink>
-        <ProjectLink href={url} target="_blank" rel="noopener noreferrer">
-          {"Try here"}
-        </ProjectLink>
+        <ProjectLink href={github}>Code</ProjectLink>
+        <ProjectLink href={url}>{"Try here"}</ProjectLink>
       </div>
 
       <div style={{ margin: "30px" }}>
@@ -86,7 +67,7 @@ function ProjectTemplate({
         <JSIcon />
         <TSIcon />
       </div>
-    </Card>
+    </Project>
   );
 }
 

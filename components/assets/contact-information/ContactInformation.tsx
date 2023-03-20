@@ -23,7 +23,7 @@ const linkList: ContactItemProps[] = [
   },
   {
     href: "https://github.com/Rafael3226",
-    icon: <GitHub />,
+    icon: <GitHub width={20} height={20} />,
     text: "GitHub",
   },
 ];

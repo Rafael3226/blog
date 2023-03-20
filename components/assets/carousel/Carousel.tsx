@@ -7,22 +7,26 @@ import { Card, Cards } from "./Cards";
 function Carousel({ items }: { items: ReactElement[] }) {
   const [index, setIndex] = useState(0);
 
+  function handleClick(n: number) {
+    setIndex(n);
+  }
+
   return (
     <>
       <ArrowButton
         className="left"
-        onClick={() => {
-          setIndex(index - 1);
-        }}
+        onClick={() => handleClick(index - 1)}
         disabled={index === 0}
-      >{`<`}</ArrowButton>
+      >
+        {"<"}
+      </ArrowButton>
       <ArrowButton
         className="right"
-        onClick={() => {
-          setIndex(index + 1);
-        }}
+        onClick={() => handleClick(index + 1)}
         disabled={index >= items.length - 1}
-      >{`>`}</ArrowButton>
+      >
+        {">"}
+      </ArrowButton>
 
       <Cards>
         {items.map((item, i) => {
@@ -33,9 +37,7 @@ function Carousel({ items }: { items: ReactElement[] }) {
                 key={i}
                 htmlFor={itemId}
                 id={itemId}
-                onClick={() => {
-                  setIndex(i);
-                }}
+                onClick={() => setIndex(i)}
               >
                 {item}
               </Card>
