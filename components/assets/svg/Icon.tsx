@@ -1,18 +1,6 @@
-export default function Icon({
-  width,
-  height,
-}: {
-  width: string;
-  height: string;
-}) {
+export default function Icon() {
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox="0 0 160 160"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M0 25C0 11.1929 11.1929 0 25 0H135C148.807 0 160 11.1929 160 25V135C160 148.807 148.807 160 135 160H25C11.1929 160 0 148.807 0 135V25Z"
         fill="black"

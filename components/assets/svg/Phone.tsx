@@ -1,13 +1,12 @@
+import SVGStyled from "./SVGStyled";
+
 function Phone() {
   return (
-    <svg
-      version="1.1"
-      id="Capa_1"
+    <SVGStyled
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 202.592 202.592"
       xmlSpace="preserve"
-      style={{ width: "20px", height: "20px", marginRight: "5px" }}
     >
       <g>
         <g>
@@ -29,7 +28,7 @@ function Phone() {
           />
         </g>
       </g>
-    </svg>
+    </SVGStyled>
   );
 }
 

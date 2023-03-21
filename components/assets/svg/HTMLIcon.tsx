@@ -1,11 +1,8 @@
+import SVGStyled from "./SVGStyled";
+
 function HTMLIcon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 48 48"
-      width="96px"
-      height="96px"
-    >
+    <SVGStyled xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
       <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
       <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
       <path
@@ -16,7 +13,7 @@ function HTMLIcon() {
         fill="#EEE"
         d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
       />
-    </svg>
+    </SVGStyled>
   );
 }
 
