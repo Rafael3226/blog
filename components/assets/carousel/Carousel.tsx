@@ -33,12 +33,7 @@ function Carousel({ items }: { items: ReactElement[] }) {
           const itemId = `item-${calculateStyleIndex(index, i)}`;
           return (
             itemId !== "item-0" && (
-              <Card
-                key={i}
-                htmlFor={itemId}
-                id={itemId}
-                onClick={() => setIndex(i)}
-              >
+              <Card key={i} id={itemId} onClick={() => setIndex(i)}>
                 {item}
               </Card>
             )

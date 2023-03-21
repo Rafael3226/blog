@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ArrowButton = styled.button`
-  z-index: 3;
+  z-index: 3000;
   color: #fff;
   width: 50px;
   height: 50px;
