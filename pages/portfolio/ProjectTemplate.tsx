@@ -1,3 +1,4 @@
+import { CardImage } from "components/assets/carousel/Cards";
 import DarkBackground from "components/assets/contact-information/DarkBackground";
 import {
   CSS,
@@ -50,7 +51,7 @@ function ProjectTemplate({
     <Project>
       <h1>{title}</h1>
       <div style={{ flexGrow: 1 }}>
-        <img style={{ height: "300px" }} src={img} />
+        <CardImage style={{ height: "300px" }} src={img} />
       </div>
       <div>
         <ProjectLink href={github}>Code</ProjectLink>
