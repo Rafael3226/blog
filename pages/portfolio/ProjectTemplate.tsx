@@ -55,7 +55,9 @@ function ProjectTemplate({
       </DivImage>
       <div>
         <ProjectLink href={github}>Code</ProjectLink>
-        <ProjectLink href={url}>{"Try here"}</ProjectLink>
+        <ProjectLink href={url} target="_blank">
+          {"Try here"}
+        </ProjectLink>
       </div>
 
       <div style={{ margin: "30px" }}>
